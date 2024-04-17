@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Article} from "../../model/article.entity";
 
 @Component({
   selector: 'app-article-list',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './article-list.component.css'
 })
 export class ArticleListComponent {
+  title = 'CatchUp';
+
+  @Input() articles: Array<Article> = [];
 
 }

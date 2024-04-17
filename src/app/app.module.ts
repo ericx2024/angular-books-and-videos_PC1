@@ -10,6 +10,16 @@ import { SideNavigationBarComponent } from './public/components/side-navigation-
 import { SourceListItemComponent } from './elearning/components/source-list-item/source-list-item.component';
 import { LanguageSwitcherComponent } from './public/components/language-switcher/language-switcher.component';
 import {HttpClientModule} from "@angular/common/http";
+import {
+  MatCard,
+  MatCardActions,
+  MatCardContent,
+  MatCardHeader,
+  MatCardImage,
+  MatCardTitleGroup
+} from "@angular/material/card";
+import {MatAnchor, MatIconButton} from "@angular/material/button";
+import {MatIcon} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -23,7 +33,16 @@ import {HttpClientModule} from "@angular/common/http";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCard,
+    MatCardHeader,
+    MatCardTitleGroup,
+    MatCardContent,
+    MatCardActions,
+    MatAnchor,
+    MatIconButton,
+    MatIcon,
+    MatCardImage
   ],
   providers: [
     provideClientHydration(),
